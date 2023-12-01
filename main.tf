@@ -45,9 +45,9 @@ module "eks-cluster" {
   private_subnet-b   = module.vpc.private_subnet-b
   public_subnet-a    = module.vpc.public_subnet-a
   public_subnet-b    = module.vpc.public_subnet-a
-  rds_instance       = module.rds.rds_instance
-  rds_endpoint       = module.rds.database-endpoint
-  rds_user           = var.db_user
-  rds_password       = var.db_password
-  rds_db             = local.primary_db_name
+  # rds_instance       = module.rds.rds_instance
+  # rds_endpoint       = module.rds.database-endpoint
+  # rds_user           = var.db_user
+  # rds_password       = var.db_password
+  # rds_db             = local.primary_db_name
 }
