@@ -143,7 +143,7 @@ resource "null_resource" "eks_update_kubeconfig" {
   depends_on = [aws_eks_cluster.my_cluster]
 
   provisioner "local-exec" {
-    command = "aws eks update-kubeconfig --name ${var.eks_cluster_name} --region ap-south-1 && aws eks update-kubeconfig --name ${var.eks_cluster_name} --region ap-south-1 --kubeconfig /Users/ritikparihar/Documents/newzera/Terraform/output/kubeconfig.yaml"
+    command = "aws eks update-kubeconfig --name ${var.eks_cluster_name} --region ap-south-1 "
   }
 }
 
